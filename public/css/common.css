@@ -37,7 +37,9 @@ input.search {
     right: 5px;
     top: 4px;
 }
-
+.login-logout {
+    width: 210px;
+}
 .login-logout .over{
     font-size: 14px;
     color: #FFF;
@@ -77,6 +79,20 @@ input.search {
     color: rgb(254, 101, 0);
     display: inline-block;
     margin-right: 10px;
+}
+.user-login {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+header .option-user {
+    right: 0px;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+}
+.right-0 {
+    right: 0;
 }
 /* End Header */
 

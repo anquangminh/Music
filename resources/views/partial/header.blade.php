@@ -14,14 +14,29 @@
                         <i class="fad fa-search position-absolute icon-search"></i>
                     </div>
                 </div>
-                <div class="login-logout d-flex align-items-center">
-                    <div class="login">
-                        <a href="{{ url('user-login') }}">Đăng nhập</a>
-                    </div>
-                    <div class="over">|</div>
-                    <div class="logout">
-                        <a href="{{ url('user-logout') }}">Đăng xuất</a>
-                    </div>
+                <div class="login-logout d-flex align-items-center position-relative">
+                    @if (Auth::check())
+                        <div class="user-login bg-light d-flex align-items-center justify-content-center">
+                            <i class="fad fa-user-secret"></i>
+                        </div>
+                        <div class="name-user ml-2">{{ Auth()->user()->username }}</div>
+                        <div class="icon-option position-absolute right-0">
+                            <i style="font-size: 22px" class="fas fa-caret-down"></i>
+                        </div>
+                        <ul class="option-user position-absolute">
+                            <li class="item-user favorite"></li>
+                            <li class="item-user"></li>
+                            <li class="item-user"></li>
+                        </ul>
+                    @else
+                        <div class="login">
+                            <a href="{{ url('user-login') }}">Đăng nhập</a>
+                        </div>
+                        <div class="over">|</div>
+                        <div class="logout">
+                            <a href="{{ url('user-logout') }}">Đăng xuất</a>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
