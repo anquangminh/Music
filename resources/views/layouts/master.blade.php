@@ -10,6 +10,7 @@
         <title>@yield('title', 'Music Web')</title>
         {{-- Css common --}}
         <link rel="stylesheet" href="{{ asset('css/common.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">

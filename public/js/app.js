@@ -19323,17 +19323,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./resources/css/common.css":
 /*!**********************************!*\
   !*** ./resources/css/common.css ***!
@@ -19388,16 +19377,27 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!**************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/css/app.css ./resources/css/common.css ***!
-  \**************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/css/common.css ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\blog\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! F:\blog\resources\css\app.css */"./resources/css/app.css");
-module.exports = __webpack_require__(/*! F:\blog\resources\css\common.css */"./resources/css/common.css");
+__webpack_require__(/*! F:\Music\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! F:\Music\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! F:\Music\resources\css\common.css */"./resources/css/common.css");
 
 
 /***/ })

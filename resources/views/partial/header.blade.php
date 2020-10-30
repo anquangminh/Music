@@ -23,10 +23,31 @@
                         <div class="icon-option position-absolute right-0">
                             <i style="font-size: 22px" class="fas fa-caret-down"></i>
                         </div>
-                        <ul class="option-user position-absolute">
-                            <li class="item-user favorite"></li>
-                            <li class="item-user"></li>
-                            <li class="item-user"></li>
+                        <ul class="option-user position-absolute right-0">
+                            <li class="item-user favorite">
+                                <a href="">
+                                    <i class="fad fa-heart"></i>
+                                    <span>Nhạc yêu thích</span>
+                                </a>
+                            </li>
+                            <li class="item-user account">
+                                <a href="">
+                                    <i class="fad fa-user"></i>
+                                    <span>Tài Khoản</span>
+                                </a>
+                            </li>
+                            <li class="item-user listen">
+                                <a href="">
+                                    <i class="fad fa-clock"></i>
+                                    <span>Nghe gần đây</span>
+                                </a>
+                            </li>
+                            <li class="item-user logout">
+                                <a href="{{ url('user-logout') }}">
+                                    <i class="fad fa-sign-out-alt"></i>
+                                    <span>Đăng xuất</span>
+                                </a>
+                            </li>
                         </ul>
                     @else
                         <div class="login">
@@ -34,7 +55,7 @@
                         </div>
                         <div class="over">|</div>
                         <div class="logout">
-                            <a href="{{ url('user-logout') }}">Đăng xuất</a>
+                            <a href="{{ url('user-register') }}">Đăng ký</a>
                         </div>
                     @endif
                 </div>
