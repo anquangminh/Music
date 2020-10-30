@@ -8,6 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         {{-- Title --}}
         <title>@yield('title', 'Music Web')</title>
+        {{-- Favicon --}}
+        <link rel="icon" href="{{ asset('image/luffy.png') }}">
         {{-- Css common --}}
         <link rel="stylesheet" href="{{ asset('css/common.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
