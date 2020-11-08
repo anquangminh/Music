@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('provider_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('facebook_id')->nullable();
+            $table->integer('active')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

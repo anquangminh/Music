@@ -31,6 +31,10 @@ Route::get('dashboard', [UserController::class, 'dashboard']);
 
 Route::get('user-logout', [UserController::class, 'logout']);
 
+Route::get('user-playlist', [UserController::class, 'playlist']);
+Route::get('user-listen', [UserController::class, 'listen']);
+Route::get('user-favorite', [UserController::class, 'favorite']);
+
 // Route::get('user-login', 'UserController@userLoginIndex');
 
 // Route::post('login', 'UserController@userPostLogin');

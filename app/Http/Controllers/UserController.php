@@ -87,4 +87,19 @@ class UserController extends Controller
         Auth::logout();
         return Redirect('user-login');
     }
-}
+
+    // ------------------- [ User playlist ] ----------------------
+    public function playlist(Request $request ) {
+        return view('pages.playlist');
+    }
+
+    // ------------------- [ User favorite ] ----------------------
+    public function favorite(Request $request ) {
+        return view('pages.favorite');
+    }
+
+    // ------------------- [ User listen ] ----------------------
+    public function listen(Request $request ) {
+        return view('pages.listen');
+    }
+}   
